@@ -1,0 +1,28 @@
+{
+  "name": "natours_css",
+  "version": "1.0.0",
+  "description": "landing page for natours",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "dev": "lite-server",
+    "dev2": "concurrently --kill-others \"npm run compile:sass\" \"npm run dev\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShijuPJohn/Natours.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShijuPJohn/Natours/issues"
+  },
+  "homepage": "https://github.com/ShijuPJohn/Natours#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "concurrently": "^6.0.2"
+  }
+}
